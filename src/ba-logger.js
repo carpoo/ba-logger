@@ -1,6 +1,6 @@
 /**
  * Logs information to standard output.
- * @class Logger
+ * @class ba-logger
  */
 var logger;
 

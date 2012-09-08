@@ -1,0 +1,232 @@
+{
+    "project": {},
+    "files": {
+        "src\\ba-logger.js": {
+            "name": "src\\ba-logger.js",
+            "modules": {},
+            "classes": {
+                "ba-logger": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "ba-logger": {
+            "name": "ba-logger",
+            "shortname": "ba-logger",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\ba-logger.js",
+            "line": 1,
+            "description": "Logs information to standard output."
+        }
+    },
+    "classitems": [
+        {
+            "file": "src\\ba-logger.js",
+            "line": 11,
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 13,
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 15,
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 35,
+            "description": "Transforms parameter into valid Loglevel",
+            "itemtype": "method",
+            "name": "getLevel",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "lvl",
+                    "description": "Can be a String or number"
+                }
+            ],
+            "return": {
+                "description": "LogLevel as a number"
+            },
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 84,
+            "description": "Saves Log message in memory and displays it if current Loglevel\nis smaller then given Loglevel.",
+            "itemtype": "method",
+            "name": "log",
+            "params": [
+                {
+                    "name": "msg",
+                    "description": "Logmessage",
+                    "type": "String"
+                },
+                {
+                    "name": "lvl",
+                    "description": "Loglevel",
+                    "optional": true
+                }
+            ],
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 108,
+            "description": "Returns stack trace as location",
+            "itemtype": "method",
+            "name": "getDetailedLocation",
+            "access": "private",
+            "tagname": "",
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 121,
+            "description": "Returns source code location.",
+            "itemtype": "method",
+            "name": "getLocation",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "Error",
+                    "description": "object",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "A String in this format: Sourcefile:linenumber",
+                "type": "String"
+            },
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 145,
+            "description": "Creates and returns an error object.",
+            "return": {
+                "description": "Error object which is created within this function."
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 154,
+            "description": "Sets current Loglevel",
+            "params": [
+                {
+                    "name": "lvl",
+                    "description": "New Loglevel"
+                }
+            ],
+            "itemtype": "method",
+            "name": "setLoglevel",
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 177,
+            "description": "Logs with loglevel debug.",
+            "itemtype": "method",
+            "name": "debug",
+            "params": [
+                {
+                    "name": "message",
+                    "description": "String to log",
+                    "type": "String"
+                }
+            ],
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 182,
+            "description": "Logs with loglevel info.",
+            "itemtype": "method",
+            "name": "info",
+            "params": [
+                {
+                    "name": "message",
+                    "description": "String to log",
+                    "type": "String"
+                }
+            ],
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 187,
+            "description": "Logs with loglevel warn.",
+            "itemtype": "method",
+            "name": "warn",
+            "params": [
+                {
+                    "name": "message",
+                    "description": "String to log",
+                    "type": "String"
+                }
+            ],
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 192,
+            "description": "Logs with loglevel error.",
+            "itemtype": "method",
+            "name": "error",
+            "params": [
+                {
+                    "name": "message",
+                    "description": "String to log",
+                    "type": "String"
+                }
+            ],
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 198,
+            "description": "Logs with loglevel verydetailed. Messages logged with this method are\nalways logged and use the detailed location.",
+            "itemtype": "method",
+            "name": "verydetailed",
+            "params": [
+                {
+                    "name": "message",
+                    "description": "String to log",
+                    "type": "String"
+                }
+            ],
+            "class": "ba-logger"
+        },
+        {
+            "file": "src\\ba-logger.js",
+            "line": 205,
+            "description": "Inserts a marking log consisting of '-' signs to mark a position.\nA mark is always logged regardless of the current loglevel.",
+            "itemtype": "method",
+            "name": "mark",
+            "params": [
+                {
+                    "name": "str",
+                    "description": "Used within the marking.",
+                    "type": "String",
+                    "optional": true
+                }
+            ],
+            "class": "ba-logger"
+        }
+    ]
+}
