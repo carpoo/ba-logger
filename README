@@ -1,1 +1,2 @@
-This is a little readme test...
+To use the logger in node.js just require this folder or the logger file in the source directory.
+To use the logger within a browser, load the file and there will be a logger variable in global namespace.
