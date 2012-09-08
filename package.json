@@ -1,8 +1,8 @@
 {
-	"name": "logger",
+	"name": "ba-logger",
 	"description": "Simple logger",
 	"main": "./src/logger",
-	"author": "Bastian Wagener",
+	"author": "babibu",
 	"version": "0.0.1",
 	"devDependencies": {
 		"yuidocjs": "0.3.x"
