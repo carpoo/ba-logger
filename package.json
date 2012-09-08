@@ -5,7 +5,9 @@
 	"author": "Bastian Wagener",
 	"version": "0.0.1",
 	"devDependencies": {
-	}
+		"yuidocjs": "0.3.x"
+	},
 	"dependencies": {
-	}
+	},
+	"engine": ">= 0.8.0"
 }
